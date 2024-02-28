@@ -20,3 +20,15 @@ Node.js é uma plataforma de código aberto, cross-platform, utilizada para dese
 
 **Conclusão**
 Node.js é uma plataforma poderosa e flexível que mudou o paradigma do desenvolvimento web. Suas características de non-blocking I/O e orientação a eventos, juntamente com a capacidade de usar JavaScript no lado do servidor, o tornam uma escolha atraente para desenvolvedores que buscam construir aplicações web rápidas e escaláveis. À medida que continua a evoluir, o Node.js certamente desempenhará um papel crucial no futuro do desenvolvimento web.
+
+## VIDEOS DE APOIO
+
+* https://www.youtube.com/watch?v=vYekSMBCCiM
+* https://www.youtube.com/watch?v=8aGhZQkoFbQ
+
+* https://www.youtube.com/@RodrigoBranas
+* https://www.youtube.com/@ErickWendelTraining
+
+## REVISAR
+
+https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods
