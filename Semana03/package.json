@@ -1,0 +1,15 @@
+{
+  "name": "aula-express",
+  "version": "1.0.0",
+  "description": "Aula sobre ExpressJS e router",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "roda-dev": "node --watch src/index.js"
+  },
+  "author": "Vinicius",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}
