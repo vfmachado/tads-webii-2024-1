@@ -45,7 +45,7 @@ formatos intercambiáveis de dados. Implantação.
 
 * Semana 03 - Aplicações Server-side vs Client side; Introdução ao express.js
 
-* Semana 04 - MVC - Model / View / Controller
+* Semana 04 - MVC - Model - ModelDAO / View / Controller
 
 * Semana 05 - Conexão com banco de dados
 
