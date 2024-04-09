@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('includes/nav-menu') %>
+
+    <h1>USUÁRIOS</h1>
+    <!-- <a href="/usuarios/adicionar">CLIQUE AQUI PARA ADD UM USUÁRIO</a> -->
+    <form action="/users" method="post">
+        <input type="text" name="name" placeholder="Nome">
+        <input type="email" name="email" placeholder="Email">
+        <input type="password" name="password" placeholder="Senha">
+        <select name="role">
+            <option value="admin">Admin</option>
+            <option value="user">User</option>
+        </select>
+        <button type="submit">ADICIONAR</button>
+    </form>
+
+
+    <br/><hr><br/>
+    
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>NOME</th>
+            <th>EMAIL</th>
+            <th>PAPEL</th>
+            <th>OPÇÕES</th>
+        </tr>
+        <% for (let i = 0; i < usuarios.length; i++) { %>
+            <tr>
+                <td><%= usuarios[i].id %></td>
+                <td><%= usuarios[i].name %></td>
+                <td><%= usuarios[i].email %></td>
+                <td><%= usuarios[i].role %></td>
+                <td>
+                    <a href="/usuarios/editar/<%= usuarios[i].id %>">EDITAR</a>
+                    <a href="/usuarios/deletar/<%= usuarios[i].id %>">DELETAR</a>
+                </td>
+            </tr>
+        <% } %>
+    </table>
+
+</body>
+</html>
