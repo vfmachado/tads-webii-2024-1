@@ -10,6 +10,7 @@
 
     <h1>USUÁRIOS</h1>
     <!-- <a href="/usuarios/adicionar">CLIQUE AQUI PARA ADD UM USUÁRIO</a> -->
+    <% if (user.role == 'admin') { %> 
     <form action="/users" method="post">
         <input type="text" name="name" placeholder="Nome">
         <input type="email" name="email" placeholder="Email">
@@ -20,7 +21,7 @@
         </select>
         <button type="submit">ADICIONAR</button>
     </form>
-
+    <% } %>
 
     <br/><hr><br/>
     

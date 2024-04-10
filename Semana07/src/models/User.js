@@ -26,6 +26,11 @@ class UserRepository {
             VALUES (?, ?, ?, ?)`);
         return stmt.run(user.name, user.email, user.password, user.role);
     }
+
+    getByEmail(email) {
+        const stmt = this.db.prepare('SELECT * FROM users WHERE email = ?');
+        return stmt.get(email);
+    }
 }
 
 module.exports = { User, UserRepository };

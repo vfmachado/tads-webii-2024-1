@@ -9,7 +9,12 @@
 
     <%- include('includes/nav-menu') %>
 
+    <% if (user) { %> 
+        <h1>Olá, <%= user.name %></h1>
+        <a href="/logout">SAIR</a>
 
+
+    <% } %>
     <h1>HOME NOVA</h1>
     <a href="/filmes/adicionar">CLIQUE AQUI PARA ADD UM TITULO</a>
     <br/><hr><br/>
